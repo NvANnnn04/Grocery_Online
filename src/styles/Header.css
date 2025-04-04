@@ -1,0 +1,134 @@
+.header-wrraper {
+    padding: 10px 0;
+}
+.header-wrraper-cpn {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.header-components {
+    background-color: rgba(106, 171, 236, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;;
+}
+.logo {
+    flex-grow: 0;
+}
+.logo-wrraper {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+.logo img {
+    width: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.search{
+    flex-grow: 3;
+    max-width: 100%;
+}
+.search input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(128, 128, 137)
+}
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.search-box i {
+    position: absolute;
+    left: 35px;
+    font-size: 16px;
+    color: rgb(128, 128, 137); 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-box button {
+    padding: 0 20px;
+    background-color: white;
+    border-left: 1px solid rgb(128, 128, 137);
+    cursor: pointer;
+    color: rgb(128, 128, 137);
+    font-size: 14px;
+    
+    
+}
+.data-input {
+    display: flex;
+    width: 100%;
+}
+.data-input input {
+    border-right: none;
+    flex-grow: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+
+}
+.data-input button {
+    min-width: 100px;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid rgb(128, 128, 137);
+    cursor: pointer;
+    color: rgb(128, 128, 137);
+    font-size: 14px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.data-input button:hover {
+    background-color: rgba(154, 193, 238, 0.897);
+}
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.nav .home-item, .nav .login, .nav .cart {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(128, 128, 137);
+    font-family: Arial,Helvetica,Arial,sans-serif;
+}
+.home-item, .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+.home-item i, .login i {
+    font-size: 20px;
+}
+.cart {
+    border-left: solid 1px rgb(128, 128, 137);
+    
+}
+.cart-item {
+    position: relative;
+    margin-left: -10px;
+
+}
+.index-cart {
+    position: absolute;
+    height: 15x;
+    top:-13px;
+    right: -5px;
+    background-color:rgb(255, 66, 79) ;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding: 0.5px 1px;
+    display: flex;
+}
