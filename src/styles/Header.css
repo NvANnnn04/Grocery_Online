@@ -6,7 +6,7 @@
     padding-right: 24px;
 }
 .header-components {
-    background-color: rgba(106, 171, 236, 0.24);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +27,7 @@
 }
 .search{
     flex-grow: 3;
+    width: 30%;
     max-width: 100%;
 }
 .search input {
@@ -39,14 +40,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    padding: 0 20px;
 }
 .search-box i {
     position: absolute;
     left: 35px;
     font-size: 16px;
     color: rgb(128, 128, 137); 
-    top: 50%;
+    top: 26%;
     transform: translateY(-50%);
 }
 .search-box button {
@@ -58,6 +60,29 @@
     font-size: 14px;
     
     
+}
+.about-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px;  
+    box-sizing: border-box; 
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-content a {
+    color: rgb(128, 128, 137);
+}
+.sale-content {
+    display: flex;
+    gap: 20px;
+}
+.sale-content span {
+    color: blue;
+    animation: var(--bl-text);
 }
 .data-input {
     display: flex;
@@ -114,7 +139,6 @@
 }
 .cart-item {
     position: relative;
-    margin-left: -10px;
 
 }
 .index-cart {

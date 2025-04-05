@@ -18,6 +18,21 @@ function Header() {
                     <input id="input-search" type="text" placeholder="Tìm kiếm sản phẩm" ></input>
                     <button>Tìm kiếm</button>
                   </div>
+                  <div className="about-wrapper">
+                    <div className="about-content">
+                      <a href="">thực phẩm</a>
+                      <a href="">thời trang</a>
+                      <a href="">gia dụng</a>
+                      <a href="">sức khỏe</a>
+                      <a href="">thể thao</a>
+                      <a href="">mẹ và bé</a>                  
+                    </div>
+                    <div className="sale-content">                                           
+                        <span>Giá luôn ưu đãi</span>
+                        <span>Sản phẩm chất lượng</span>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
               <div className="nav">
@@ -40,6 +55,10 @@ function Header() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="content">
+              <h1>
+              </h1>
             </div>
           </div>
         </div>
