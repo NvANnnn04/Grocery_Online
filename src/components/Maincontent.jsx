@@ -1,12 +1,11 @@
-import '../styles/MainContent.css';
 import React from 'react';
+import '../styles/components/MainContent.css';
 
 function Maincontent() {
   return (
-    <div>
-        <h2> Main content</h2>
-        <iframe src = "htttps://example.com" width="100px;">
-        </iframe>
+    <div className="main-content">
+       ádf
+        
     </div>  
   );
 }

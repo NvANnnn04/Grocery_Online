@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Header.css';
+import '../styles/components/Header.css';
 function Header() {
   return (
     <header className='header'>
@@ -56,10 +56,7 @@ function Header() {
                 </div>
               </div>
             </div>
-            <div className="content">
-              <h1>
-              </h1>
-            </div>
+            
           </div>
         </div>
     </header>

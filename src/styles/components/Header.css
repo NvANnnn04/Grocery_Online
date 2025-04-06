@@ -1,9 +1,5 @@
-.header-wrraper {
-    padding: 10px 0;
-}
 .header-wrraper-cpn {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 10px 0px;
 }
 .header-components {
     background-color: white;
@@ -11,6 +7,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;;
+    box-shadow: var(--bshadow);
+    border-bottom: 1px solid rgb(163, 163, 172);
 }
 .logo {
     flex-grow: 0;
@@ -130,12 +128,12 @@
     justify-content: center;
     gap: 8px; 
 }
+.login {
+    border-left: solid 1px rgb(128, 128, 137);
+    border-right: solid 1px rgb(128, 128, 137);
+}
 .home-item i, .login i {
     font-size: 20px;
-}
-.cart {
-    border-left: solid 1px rgb(128, 128, 137);
-    
 }
 .cart-item {
     position: relative;
@@ -149,7 +147,7 @@
     background-color:rgb(255, 66, 79) ;
     color: rgb(255, 255, 255);
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     text-align: center;
     align-items: center;

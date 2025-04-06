@@ -1,0 +1,27 @@
+.menu {
+    background-color: var(--bg-color);
+    box-shadow: var(--bshadow);
+    border-radius: 5px;
+    max-height: 100vh;
+    overflow-y: auto;
+
+}
+.menu-item {
+    padding: 20px;
+    border-radius: 5px;
+}   
+.menu-item:hover {
+    background-color: rgb(216, 225, 232);
+}
+.menu::-webkit-scrollbar {
+    width: 6px;
+}
+.menu::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#title {
+    margin: 15px 10px 5px 15px;
+}
+.menu-item a {
+    color: rgb(128, 128, 137);
+}
