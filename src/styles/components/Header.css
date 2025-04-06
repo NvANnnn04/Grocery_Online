@@ -154,3 +154,6 @@
     padding: 0.5px 1px;
     display: flex;
 }
+a {
+    text-decoration: none;
+}

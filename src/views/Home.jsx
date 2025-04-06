@@ -1,25 +1,24 @@
-import React from 'react';
-import Menubar from '../components/HomeMenu.jsx';
-import Maincontent from '../components/Maincontent.jsx';
-import Header from '../components/Header.jsx';
-import '../styles/page/Home.css'; 
-import '../styles/Global.css';
-function Home() {
+import React, { useState, useEffect } from 'react';
+import ProductList from '../components/ProductList.jsx';
+
+const Home = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    
+    const fetchedItems = ['Sản phẩm 1', 'Sản phẩm 2', 'Sản phẩm 3'];
+    setItems(fetchedItems);
+  }, []);
+
   return (
-    <div className="home">
-      <Header />
-      <div className="layout-main">
-        <div className="wrapper">
-        <div className="menubar">
-          <Menubar />
-        </div>
-        <div className="content">
-          <Maincontent />
-        </div>
-        </div>
-      </div> 
+    <div className="home-content">
+      <ProductList
+        title="Trang chủ"
+        nameDanhmuc="Gợi ý hôm nay"
+        items={items}
+      />
     </div>
   );
-}
+};
 
 export default Home;
