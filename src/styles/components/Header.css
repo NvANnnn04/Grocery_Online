@@ -131,6 +131,17 @@
 .login {
     border-left: solid 1px rgb(128, 128, 137);
     border-right: solid 1px rgb(128, 128, 137);
+    padding: 10px 0;
+}
+.login:hover {
+    background-color: rgb(207, 207, 214);
+    border: 1px solid  rgb(166, 166, 177);
+    border-radius: 4px;
+}
+.home-item:hover {
+    background-color: rgb(207, 207, 214);
+    border: 1px solid  rgb(166, 166, 177);
+    border-radius: 4px;
 }
 .home-item i, .login i {
     font-size: 20px;

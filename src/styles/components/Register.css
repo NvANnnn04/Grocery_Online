@@ -1,0 +1,53 @@
+.register-page {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #FFFFFF;
+}
+.register-box {
+    width: 350px;
+    padding: 40px;
+    box-shadow: 2px 4px 8px rgb(194, 193, 188);
+    background-color: #f7f6f6;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+}
+.input-item {
+    margin-bottom: 20px;
+}
+.input-item input{
+    width: 100%;
+    padding: 10px 0 10px 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #bbb7b7;
+    border-radius: 5px;
+}
+.input-item input:focus {
+    border: 2px solid #2b2c2b; 
+}
+.btn-dky button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #e6e2e2;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid  #888484;
+}
+.btn-dky button:hover {
+    background-color: #c4bbbb;
+    transition: background-colo 0.1s ease-in-out;
+    transform: scale(1.03);
+}

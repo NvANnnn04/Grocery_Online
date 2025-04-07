@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/Header.css';
 function Header() {
   return (
@@ -15,17 +16,22 @@ function Header() {
                 <div className="search-box">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <div className="data-input">
-                    <input id="input-search" type="text" placeholder="Tìm kiếm sản phẩm" ></input>
+                    <input 
+                    id="input-search" 
+                    type="text" 
+                    placeholder="Tìm kiếm sản phẩm" 
+                    autoComptele="off"
+                    />
                     <button>Tìm kiếm</button>
                   </div>
                   <div className="about-wrapper">
                     <div className="about-content">
-                      <a href="">thực phẩm</a>
-                      <a href="">thời trang</a>
-                      <a href="">gia dụng</a>
-                      <a href="">sức khỏe</a>
-                      <a href="">thể thao</a>
-                      <a href="">mẹ và bé</a>                  
+                      <Link to="/thucpham">thực phẩm</Link>
+                      <Link to="/thoitrang">thời trang</Link>
+                      <Link to="/giadung">gia dụng</Link>
+                      <Link to="/suckhoe">sức khỏe</Link>
+                      <Link to="/thethao">thể thao</Link>
+                      <Link to="/dochoi">mẹ và bé</Link>                  
                     </div>
                     <div className="sale-content">                                           
                         <span>Giá luôn ưu đãi</span>
@@ -36,22 +42,20 @@ function Header() {
                 </div>
               </div>
               <div className="nav">
-                <div className="home-item">
-                  <i class="fa-solid fa-house"></i>
+                <Link to='/' className="home-item">
+                  <i className="fa-solid fa-house"></i>
                   <span>Trang chủ</span>
-                </div>
-                <div className="login">
-                  <i class="fa-solid fa-door-open"></i>
+                </Link>
+                <Link to="/login" className="login">
+                  <i className="fa-solid fa-door-open"></i>
                   <span>Đăng nhập</span>
-                </div>
+                </Link>
                 <div className="cart">
                   <div className="cart-item">
-                    <a>
-                      <div className="cart-item">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span className="index-cart">0</span>
-                      </div>
-                    </a>
+                    <Link to="/cart" className="cart-item">
+                      <i className="fa-solid fa-cart-shopping"></i>
+                      <span className="index-cart">0</span>
+                    </Link>
                   </div>
                 </div>
               </div>
