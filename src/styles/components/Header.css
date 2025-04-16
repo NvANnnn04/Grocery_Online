@@ -127,21 +127,19 @@
     align-items: center;
     justify-content: center;
     gap: 8px; 
+    box-sizing: border-box;
+    border: 1px solid transparent;
 }
 .login {
-    border-left: solid 1px rgb(128, 128, 137);
-    border-right: solid 1px rgb(128, 128, 137);
+    border-left: 0.2px solid  rgb(128, 128, 137);
+    border-right: 0.2px solid  rgb(128, 128, 137);
     padding: 10px 0;
 }
-.login:hover {
+.login:hover, .home-item:hover {
     background-color: rgb(207, 207, 214);
     border: 1px solid  rgb(166, 166, 177);
     border-radius: 4px;
-}
-.home-item:hover {
-    background-color: rgb(207, 207, 214);
-    border: 1px solid  rgb(166, 166, 177);
-    border-radius: 4px;
+    transition: all 0.2s ease;
 }
 .home-item i, .login i {
     font-size: 20px;
@@ -153,7 +151,7 @@
 .index-cart {
     position: absolute;
     height: 15x;
-    top:-13px;
+    top:-10px;
     right: -5px;
     background-color:rgb(255, 66, 79) ;
     color: rgb(255, 255, 255);

@@ -1,29 +1,32 @@
-const express = require("express");
-const mssql = require("mssql");
-const cors = require("cors");
-const dotenv = require("dotenv");
+import express from "express";
+import mssql from "mssql";
+import cors from "cors";
+import dotenv from "dotenv";
+import authenLog from "./routes/authenLog.js";
+import authenRegis from "./routes/authenRegis.js";
+import dbConfig from "./config/dbConfig.js";
 
 dotenv.config();
 const app = express();
+
 app.use(express.json());
 app.use(cors());
-
-const dbConfig = {
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  server: process.env.DB_SERVER,
-  database: process.env.DB_DATABASE,
-  options: {
-    encrypt: false,
-    trustServerCertificate: true,
-  },
-};
 
 mssql
   .connect(dbConfig)
   .then(() => {
-    console.log("Thanh cong");
+    console.log("Kết nối cơ sở dữ liệu thành công!");
   })
   .catch((err) => {
-    console.log("Loo ket noi:", err);
+    console.error("Lỗi kết nối DB: ", err);
   });
+
+app.use("/api/auth", authenLog);
+app.use("/api/auth", authenRegis);
+app.get("/", (req, res) => {
+  res.send("API đang chạy...");
+});
+
+app.listen(3000, () => {
+  console.log("Server đang chạy ở cổng 3000");
+});
