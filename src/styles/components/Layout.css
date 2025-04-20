@@ -1,0 +1,37 @@
+.layout-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F5F5FA;;
+}
+.layout-content h4 {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 30px;
+    margin: 20px 0;
+}
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+.menubar {
+    flex-shrink: 0;
+}
+.wrapper {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 10px 40px;
+}
+.menubar {
+    width: 15%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.content {
+    width: 85%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+ 
+}

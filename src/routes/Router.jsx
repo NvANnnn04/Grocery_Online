@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import Layout from "../layouts/Layout.jsx";
 import HomeMenu from "../components/HomeMenu.jsx";
 import Header from "../components/Header.jsx";
 import Register from "../components/Register.jsx";
@@ -40,23 +41,6 @@ const Router = () => {
         </Routes>
       </div>
     </BrowserRouter>
-  );
-};
-const Layout = () => {
-  return (
-    <div>
-      <Header />
-      <div className="layout-main">
-        <div className="wrapper">
-          <div className="menubar">
-            <HomeMenu />
-          </div>
-          <div className="content">
-            <Outlet />
-          </div>
-        </div>
-      </div>
-    </div>
   );
 };
 

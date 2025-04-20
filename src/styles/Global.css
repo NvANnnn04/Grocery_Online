@@ -2,6 +2,9 @@
     --bg-color: #FFFFFF;
     --bl-text: blink 1s infinite;
     --bshadow: 0.1px 0.1px 0.2px rgb(37, 34, 34);
+    --line-color: rgb(128, 128, 137);
+    --text-color:  rgb(128, 128, 137);
+    --text-font: Inter, Helvetica, Arial, sans-serif;
 }
 @keyframes blink {
     0% {

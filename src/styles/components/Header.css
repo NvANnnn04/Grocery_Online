@@ -1,5 +1,5 @@
 .header-wrraper-cpn {
-    padding: 10px 0px;
+    padding: 0px 0px;
 }
 .header-components {
     background-color: white;
@@ -9,6 +9,7 @@
     border-radius: 5px;;
     box-shadow: var(--bshadow);
     border-bottom: 1px solid rgb(163, 163, 172);
+    padding: 0 5px;
 }
 .logo {
     flex-grow: 0;
@@ -32,7 +33,7 @@
     width: 100%;
     padding: 10px 15px 10px 40px;
     box-sizing: border-box;
-    border: 1px solid rgb(128, 128, 137)
+    border: 0.1px solid #DADAE0
 }
 .search-box {
     position: relative;
@@ -45,16 +46,17 @@
     position: absolute;
     left: 35px;
     font-size: 16px;
-    color: rgb(128, 128, 137); 
+    color: #b3b3ba; 
     top: 26%;
     transform: translateY(-50%);
 }
 .search-box button {
     padding: 0 20px;
     background-color: white;
-    border-left: 1px solid rgb(128, 128, 137);
+    border-left: 1px solid #DADAE0;
     cursor: pointer;
-    color: rgb(128, 128, 137);
+    border-color: #DADAE0;
+    color: #DADAE0;
     font-size: 14px;
     
     
